@@ -1,0 +1,2 @@
+ socat UDP4-RECVFROM:4567,ip-add-membership=225.2.0.1:192.168.0.14,fork -  
+ socat UDP4-RECVFROM:6666,ip-add-membership=224.1.0.1:192.168.10.2,fork EXEC:hostname 

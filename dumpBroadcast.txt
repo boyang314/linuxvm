@@ -1,0 +1,479 @@
+    1  vi hello.c
+    2  gcc -o hello hello.c
+    3  ./hello
+    4  gdb hello
+    5  gdb
+    6  gcc --v
+    7  gcc --version
+    8  which java
+    9  which javac
+   10  which python
+   11  which perl
+   12  python
+   13  top
+   14  dmsg
+   15  dstat
+   16  pwd
+   17  lsof
+   18  top
+   19  htop
+   20  top
+   21  mpstat
+   22  pstat
+   23  htop
+   24  top
+   25  dstat
+   26  ip
+   27  ip link
+   28  pwd
+   29  ls
+   30  mkdir work
+   31  ls Desktop/
+   32  mv Desktop/* work/
+   33  ls
+   34  ls Desktop/
+   35  ls work/
+   36  ls -a work/
+   37  ls -s Desktop/
+   38  exit
+   39  cd ../wor
+   40  cd ../work/
+   41  ls
+   42  gdb hello
+   43  gcc -gdb -o hello hello.c
+   44  gcc -g -o hello hello.c
+   45  ls
+   46  gdb hello
+   47  which tcpdump
+   48  which which tshark
+   49  tshark
+   50  sudo tshark
+   51  ls
+   52  ip link
+   53  ifconfig
+   54  ip
+   55  ip neigh
+   56  ping 192.168.225.1
+   57  ip neigh
+   58  sudo tshark
+   59  htop
+   60  dstat
+   61  ip
+   62  ip addr
+   63  ip rout
+   64  ip neigh
+   65  ip ntable
+   66  ip link
+   67  sudo ip neigh
+   68  ping 255.255.255.255
+   69  ping -b 255.255.255.255
+   70  ping -b 192.168.1.255
+   71  ping  192.168.1.255
+   72  ip addr
+   73  ping  192.168.225.255
+   74  ping  -b 192.168.225.255
+   75  ping  -b 192.168.255.255
+   76  ping 224.0.0.1
+   77  ping -b 224.0.0.1
+   78  which arp
+   79  which arp-scan
+   80  ls /usr/sbin|grep arp
+   81  which nmap
+   82  nmap
+   83  nmap -sP 
+   84  nmap 192.168.*.*
+   85  nmap -sP 192.168.1.0/24
+   86  nmap -sP 192.168.225.1/24
+   87  nmap -sP 192.168.1/24.1/24
+   88  nmap -sP 192.168.*.1/24
+   89  arp -a
+   90  nmap -sP 192.168.1.*
+   91  nmap -sP 192.168.*.*
+   92  nmap -sP 192.168.0.*
+   93  nmap -sn 192.168.0.*
+   94  nmap
+   95  nmap -snA 192.168.0.*
+   96  nmap -sPA 192.168.0.*
+   97  nmap -sA 192.168.0.*
+   98  nmap -A 192.168.0.*
+   99  arp-scan
+  100  sudo arp-scan
+  101  sudo arp-scan --help
+  102  sudo arp-scan 
+  103  ifconfig
+  104  sudo arp-scan --interface=eth0 --localnet
+  105  sudo arp-scan --interface=eth0 192.168.0.0/24
+  106  sudo arp-scan --interface=eth0 192.168.1.0/24
+  107  sudo arp-scan --interface=eth0 192.168.1.1/24
+  108  sudo arp-scan --interface=eth0 192.168.0.1/24
+  109  sudo arp-scan -l
+  110  sudo arp-scan --interface=eth0 192.168.0.1/24
+  111  sudo arp-scan 192.168.0.1/24
+  112  sudo arp-scan 192.168.2.1/24
+  113  sudo arp-scan 192.168.1.1/24
+  114  atop
+  115  perf
+  116  perf top
+  117  sudo perf top
+  118  dstat
+  119  dstat -afv
+  120  fuser
+  121  ss
+  122  pwd
+  123  htop
+  124  q
+  125  exit
+  126  nc localhost 4567
+  127  netstat -a|grep LIS
+  128  nc localhost 4567
+  129  which nc
+  130  man nc
+  131  ls /usr/share/zoneinfo/
+  132  zdump /usr/share/zoneinfo/Japan 
+  133  zdump /usr/share/zoneinfo/Hongkong
+  134  date
+  135  pwd
+  136  cd
+  137  ls
+  138  cd /usr/include/g++
+  139  cd /usr/include/
+  140  ls
+  141  grep -r apply *
+  142  grep -r apply *|grep -v linux
+  143  grep -r typelist *|grep -v linux
+  144  grep -r invoke *|grep -v linux
+  145  grep -r typelist *|grep -v linux
+  146  ls
+  147  cd c++
+  148  ls
+  149  ls -l
+  150  cd 6
+  151  ls
+  152  ls experimental/
+  153  ls ext
+  154  ls
+  155  v ext/typelist.h 
+  156  vi ext/typelist.h 
+  157  python -v
+  158  python -version
+  159  python --version
+  160  perl --version
+  161  gcc --version
+  162  gdb --version
+  163  vim --version
+  164  uname -a
+  165  which javac
+  166  javac
+  167  which gcc
+  168  which gdb
+  169  which perl
+  170  which python
+  171  which tshark
+  172  which lsof
+  173  ss
+  174  fuser
+  175  pwd
+  176  ls
+  177  cd ~
+  178  ls
+  179  cd work
+  180  ls
+  181  objdump hello
+  182  objdump -a hello
+  183  file hello
+  184  vim
+  185  nmap 192.168.0.19
+  186  nmap 192.168.0.15
+  187  nmap -A 192.168.0.15
+  188  netstat -a|grep -i listen
+  189  nmap
+  190  nmap -v -A 192.168.0.15
+  191  nmap -v -sS -T4 -A 192.168.0.15
+  192  sudo nmap -v -sS -T4 -A 192.168.0.15
+  193  sudo nmap -p 548 -Pn -v --script "afp-serverinfo" 192.168.0.15
+  194  sudo nmap -v -Pn -O 192.168.0.15
+  195  dstat -afv
+  196  top
+  197  htop
+  198  ls
+  199  holiday
+  200  cal
+  201  cal -3
+  202  which emacs
+  203  which pal
+  204  pal
+  205  which ncal
+  206  ncal
+  207  man ncal
+  208  pal
+  209  pal -v
+  210  pal -a
+  211  pal -h
+  212  pal -V
+  213  pal -v
+  214  pall
+  215  which nc
+  216  nc -l 4567
+  217  man nc
+  218  nc -l -p 4567
+  219  man epoll
+  220  man epoll_create
+  221  ls
+  222  vi feature.cpp
+  223  g++ -o feature feature.cpp 
+  224  vi feature.cpp
+  225  g++ -o feature feature.cpp 
+  226  ./feature 
+  227  vi feature.cpp
+  228  g++ -o feature feature.cpp 
+  229  vi feature.cpp
+  230  g++ -o feature feature.cpp 
+  231  g++ -std=c++1x -o feature feature.cpp 
+  232  g++ -std=c++0x -o feature feature.cpp 
+  233  g++ -std=c++14 -o feature feature.cpp 
+  234  g++ -std=c++17 -o feature feature.cpp 
+  235  vi feature.cpp
+  236  g++ -o feature feature.cpp 
+  237  vi feature.cpp
+  238  g++ -o feature feature.cpp 
+  239  vi feature.cpp
+  240  g++ --version
+  241  g++ -std=c++17 -o feature feature.cpp 
+  242  ./feature
+  243  vi feature.cpp
+  244  ./feature
+  245  g++ -std=c++17 -o feature feature.cpp 
+  246  vi feature.cpp
+  247  g++ -std=c++17 -o feature feature.cpp 
+  248  vi feature.cpp
+  249  g++ -std=c++17 -o feature feature.cpp 
+  250  vi feature.cpp
+  251  g++ -std=c++17 -o feature feature.cpp 
+  252  ./feature 
+  253  vi feature.cpp
+  254  g++ -std=c++17 -o feature feature.cpp 
+  255  vi feature.cpp
+  256  g++ -std=c++17 -o feature feature.cpp 
+  257  ./feature 
+  258  vi feature.cpp
+  259  g++ -std=c++17 -o feature feature.cpp 
+  260  vi feature.cpp
+  261  g++ -std=c++17 -o feature feature.cpp 
+  262  vi feature.cpp
+  263  g++ -std=c++17 -o feature feature.cpp 
+  264  vi feature.cpp
+  265  g++ -std=c++17 -o feature feature.cpp 
+  266  vi feature.cpp
+  267  g++ -std=c++17 -o feature feature.cpp 
+  268  vi feature.cpp
+  269  g++ -std=c++17 -o feature feature.cpp 
+  270  vi feature.cpp
+  271  g++ -std=c++17 -o feature feature.cpp 
+  272  vi feature.cpp
+  273  clang++ -o feature feature.cpp
+  274  which clang
+  275  ls /usr/include/
+  276  ls /usr/include/cl
+  277  ls /usr/include/clang/
+  278  ls /usr/include/clang/3.9
+  279  ls /usr/include/clang/3.9/include
+  280  ls /usr/bin/cl*
+  281  clang++-3.9 -o feature feature.cpp
+  282  clang++-3.9 -std=c++17 -o feature feature.cpp
+  283  clang++-3.9 -std=c++1z -o feature feature.cpp
+  284  clang++-3.9 -std=c++2a -o feature feature.cpp
+  285  clang++-3.9 -std=c++14 -o feature feature.cpp
+  286  g++ -std=c++17 -o feature feature.cpp 
+  287  vi feature.cpp 
+  288  g++ -std=c++17 -o feature feature.cpp 
+  289  vi feature.cpp 
+  290  g++ -std=c++17 -o feature feature.cpp 
+  291  vi feature.cpp 
+  292  g++ -std=c++17 -o feature feature.cpp 
+  293  vi feature.cpp 
+  294  g++ -std=c++17 -o feature feature.cpp 
+  295  vi feature.cpp 
+  296  which clang
+  297  history
+  298  which clang++-3.9
+  299  ls /usr/bin
+  300  ls /usr/include
+  301  ls /usr/include/clang/
+  302  ls /usr/include/c++
+  303  ls /usr/bin/cla*
+  304  clang-tblgen-3.9 
+  305  ls
+  306  history
+  307  g++ -std=c++17 -o feature feature.cpp 
+  308  ./feature 
+  309  v feature.cpp 
+  310  vim feature.cpp 
+  311  exit
+  312  nano
+  313  v vimrc 
+  314  mv vimrc ~/.vimrc
+  315  exit
+  316  cat ~/.tmux.conf 
+  317  tmux ls
+  318  tmux killsession 2
+  319  tmux kill 2
+  320  tmux kill-session 2
+  321  tmux kill-session -t 2
+  322  top
+  323  ls
+  324  ls
+  325  ls ~
+  326  pwd
+  327  tmux list
+  328  tmux list-s
+  329  tmux kill-s 3
+  330  tmux kill-se 3
+  331  tmux kill-sess 3
+  332  tmux kill-sess -t 3
+  333  socat readline TCP-LISTEN:25,crlf
+  334  socat -v
+  335  socat -?
+  336  socat -?|less
+  337  socat -V
+  338  socat -V|head
+  339  socat readline TCP-LISTEN:25,crlf
+  340  socat READLINE TCP-LISTEN:25,crlf
+  341  which hping
+  342  which hping3
+  343  hping
+  344  hping3
+  345  hping3 -?
+  346  hping3 --help
+  347  hping3 www.google.com
+  348  mtr www.google.com
+  349  mtr www.citadel.com
+  350  hping3 www.citadel.com
+  351  hping3 192.168.0.1
+  352  hping3 --help|less
+  353  hping3 -1 192.168.0.1
+  354  sudo hping3 -1 192.168.0.1
+  355  sudo hping3 www.google.com
+  356  tty
+  357  ls /dev
+  358  ls /dev/pts/
+  359  stty
+  360  stty -a
+  361  stty < /dev/tty16
+  362  sudo stty < /dev/tty16
+  363  ps -ef|grep ttyp
+  364  ps -ef|grep tty
+  365  ls /dev/tty*
+  366  ls /dev/v*
+  367  cat /dev/vcs
+  368  sudo cat /dev/vcs
+  369  sudo cat /dev/vcs1
+  370  sudo cat /dev/vcs2
+  371  sudo cat /dev/vcs4
+  372  sudo cat /dev/vcs5
+  373  sudo cat /dev/vcs1
+  374  echo "hello" > /dev/tty1
+  375  sudo echo "hello" > /dev/tty1
+  376  sudo echo "hello" > /dev/tty2
+  377  sudo echo "hello" > /dev/tty3
+  378  sudo echo "hello" > /dev/tty4
+  379  sudo echo "hello" > /dev/tty12
+  380  ls /dev/tty*
+  381  ls /dev/
+  382  cat /dev/network_latency 
+  383  sudo cat /dev/network_latency 
+  384  ls /dev/network_latency 
+  385  od /dev/network_latency 
+  386  sudo od /dev/network_latency 
+  387  sudo od /dev/network_throughput 
+  388  ls /dev/
+  389  LD_DEBUG=help ls
+  390  LD_DEBUG=libs ls
+  391  LD_DEBUG=a ls
+  392  LD_DEBUG=all ls
+  393  LD_DEBUG=all ls|tee out.txt
+  394  less out.txt
+  395  rm out.txt 
+  396  LD_DEBUG=all ls 2>&1 | tee out.txt
+  397  less out.txt
+  398  rm out.txt 
+  399  ls
+  400  which ttcp
+  401  which iperf
+  402  which perl
+  403  which perf
+  404  perf top
+  405  sudo perf top
+  406  dstat
+  407  ls
+  408  which hping3
+  409  ls /usr/sbin
+  410  ls /usr/bin
+  411  ldd ls
+  412  ldd /usr/bin/ls
+  413  which ls
+  414  ldd /bin/ls
+  415  LD_PROFILE=libc.so.6 ls
+  416  ls
+  417  less ls
+  418  ls
+  419  LD_PROFILE=libc.so.6 ls -l
+  420  sudo LD_PROFILE=libc.so.6 ls -l
+  421  ls
+  422  ls /var/tmp
+  423  ls -ltr /var/tmp
+  424  less /var/tmp/libc.so.6.profile 
+  425  which gprof
+  426  gprof /lib/libc.so.6 /var/tmp/libc.so.6.profile 
+  427  ldd /bin/lis
+  428  ldd /bin/ls
+  429  gprof /lib/i386-linux-gnu/libc.so.6 /var/tmp/libc.so.6.profile 
+  430  which gprof
+  431  ls /usr/bin|grep prof
+  432  sprof /lib/i386-linux-gnu/libc.so.6 /var/tmp/libc.so.6.profile 
+  433  ls /usr/bin|grep prof
+  434  ls -ls /usr/bin|grep prof
+  435  strace -f ls
+  436  ltrace -f ls
+  437  ltrace
+  438  ltrace ls
+  439  ltrace ls -l
+  440  perf trace ls
+  441  sudo perf trace ls
+  442  sudo perf trace perf list
+  443  er
+  444  perp
+  445  perstty sane
+  446  ls
+  447  exit
+  448  tty
+  449  ls
+  450  echo "ls" > /tmp/mypipe 
+  451  socat - /tmp/mypipe
+  452  socat - pipe:/tmp/mypipe
+  453  socat - pipe:/tmp/mypipe,crnl
+  454  echo "ls" > /tmp/mypipe 
+  455  socat -,crnl pipe:/tmp/mypipe,crnl
+  456  ls
+  457  man sockaddr_in
+  458  locate sockaddr
+  459  v /usr/include/i386-linux-gnu/bits/sockaddr.h
+  460  man inet_addr
+  461  man 2 inet_addr
+  462  man -a inet_addr
+  463  nc -l 4567
+  464  nc -l -p 4567
+  465  nc -lu -p 4567
+  466  ifconfig
+  467  v socatRecv
+  468  history
+  469  cat socatRecv 
+  470  socat UDP4-RECVFROM:4567,ip-add-membership=225.2.0.1:192.168.0.14,fork -
+  471  ifconfig
+  472  sudo tcpdump -i eth0 ether broadcast
+  473  sudo tcpdump -vvv -i eth0 ether broadcast
+  474  sudo tcpdump -vvvxx -i eth0 ether broadcast
+  475  sudo tcpdump -vva -i eth0 ether broadcast
+  476  sudo tcpdump -vvA -i eth0 ether broadcast
+  477  pwd
+  478  cd ../work/
+  479  history > dumpBroadcast.txt

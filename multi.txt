@@ -1,0 +1,37 @@
+on 192.168.0.14 host:
+
+1. generate multicast traffic
+$ socat -d -d -d -d - udp-datagram:224.0.0.2:6666,ip-add-membership=224.0.0.2:eth0
+
+2. bridge it to 192.168.0.15 via tcp port 8888
+$ socat udp-recvfrom:6666,ip-add-membership=224.0.0.2:eth0,fork tcp:192.168.0.15:8888
+
+on 192.168.0.15 host:
+
+1. receive from port 8888 and dump to stdio
+$ socat - tcp-l:8888,reuseaddr,fork
+
+2. republish to multicast
+$ socat upd4-datagrap:226.0.0.2:6666,range=192.168.0.0/24 tcp-l:8888,reuseaddr,fork
+or
+$ socat tcp-l:8888,reuseaddr,fork upd4-datagrap:226.0.0.2:6666,range=192.168.0.0/24 
+
+plus verification
+
+$ socat udp4-recvfrom:6666,ip-add-membership=226.0.0.2:eth0,fork -
+
+simplification:
+.104
+
+$ socat - udp-datagram:224.0.0.2:6666,ip-add-membership=224.0.0.2:eth0
+$ socat udp-recvfrom:6666,ip-add-membership=224.0.0.2:eth0,fork tcp:192.168.0.15:8888
+
+.105
+$ socat upd-datagrap:226.0.0.2:6666 tcp-l:8888,reuseaddr,fork
+or
+$ socat tcp-l:8888,reuseaddr,fork upd-datagrap:226.0.0.2:6666 
+and
+$ socat udp-recvfrom:6666,ip-add-membership=226.0.0.2:eth0,fork -
+
+
+

@@ -1,0 +1,45 @@
+socat -x -v -d -d tcp4-listen:8032,fork,reuseaddr pipe:/tmp/send\!\!/tmp/receive
+
+telnet localhost 8032
+
+mkfifo /tmp/receive
+
+mkfifo /tmp/send
+
+touch /tmp/stream
+
+tail -f /tmp/stream >> /tmp/send
+
+$ cat eggs.payload >> /tmp/stream
+
+  346  socat FILE:commands.txt STDOUT
+  347  socat STDIN STDOUT
+  348  socat -u READLINE STDOUT
+  349  socat -u readline STDOUT
+  349  socat -u readline STDOUT
+  350  cat > keys.txt
+  351  cat keys.txt 
+  357  cat file.txt 
+  358  socat STDIN OPEN:file.txt,creat,trunc
+  359  cat file.txt 
+$ socat TCP-L:1234 EXEC:/bin/bash
+$ socat TCP:localhost:1234 -
+
+$ socat - UDP:localhost:11111
+$ socat - UDP-L:11111
+
+broadcast
+    socat - UDP-DATAGRAM:10.0.0.255:11111,broadcast,sp=11111
+multicast
+    socat - UDP-DATAGRAM:244.255.0.1:11111,bind=:11111,ip-add-membership=244.255.0.1:eth0
+unicast
+    socat - UDP-DATAGRAP:10.0.0.5:11111,sp=11111
+
+
+$ socat TCP-L:8080,reuseaddr,fork TCP:172.217.12.142:80
+
+$ nc localhost 8080 |tee response.html
+GET /   #read from google (172.217.12.142)
+
+
+

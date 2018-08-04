@@ -1,0 +1,30 @@
+  469  cat socatRecv 
+  470  socat UDP4-RECVFROM:4567,ip-add-membership=225.2.0.1:192.168.0.14,fork -
+  471  ifconfig
+  472  sudo tcpdump -i eth0 ether broadcast
+  473  sudo tcpdump -vvv -i eth0 ether broadcast
+  474  sudo tcpdump -vvvxx -i eth0 ether broadcast
+  475  sudo tcpdump -vva -i eth0 ether broadcast
+  476  sudo tcpdump -vvA -i eth0 ether broadcast
+  477  pwd
+  478  cd ../work/
+  479  history > dumpBroadcast.txt
+  480  man tshark
+  481  sudo tshark -vvA -i eth0 ether broadcast
+  482  sudo tshark -vvA -i eth0 
+  483  sudo tshark  -i eth0 
+  484  sudo tshark  -i eth0 udp.port=5000
+  485  sudo tshark  -i eth0 -R udp.port=5000
+  486  sudo tshark  -i eth0 "udp.port=5000"
+  487  sudo tshark -f "broadcast or multicast" //good
+  488  history > tshark.txt
+  489  sudo tshark -f "broadcast or multicast and port=5000" //failed
+  490  sudo tshark -f "broadcast or multicast" -Y "port == 5000" //failed
+  491  sudo tshark -f "broadcast or multicast" -Y "udp.port == 5000" //good
+  492  history > tshark.txt
+$ sudo tshark -f "broadcast or multicast" -Y "udp.port == 5000" -V //good, super detail
+$ sudo tshark -f "broadcast or multicast" -Y "udp.port == 5000" -x //good, payload, header coded
+
+
+
+
